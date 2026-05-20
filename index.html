@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo de Números</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎮 Jogo dos Números</h1>
+            <p>Escolha um número de 1 a 10. Quem tiver o maior número vence!</p>
+        </div>
+
+        <div class="buttons" id="buttons">
+            <button onclick="play(1)">1</button>
+            <button onclick="play(2)">2</button>
+            <button onclick="play(3)">3</button>
+            <button onclick="play(4)">4</button>
+            <button onclick="play(5)">5</button>
+            <button onclick="play(6)">6</button>
+            <button onclick="play(7)">7</button>
+            <button onclick="play(8)">8</button>
+            <button onclick="play(9)">9</button>
+            <button onclick="play(10)">10</button>
+        </div>
+
+        <div class="resultado">
+            <h2>Resultado</h2>
+
+            <div class="numero">
+                Seu número: <span id="player">0</span>
+            </div>
+            <div class="numero">
+                Máquina: <span id="machine">0</span>
+            </div>
+
+            <br>
+
+            <div id="winner" class="winner-resultado">Escolha um número para começar</div>
+        </div>
+
+        <div class="placar">
+
+            <h2>PLACAR</h2>
+
+            <p>👨 Você: <span id="pontosJogador">0</span></p>
+
+            <p>🤖 Máquina: <span id="pontosMaquina">0</span></p>
+
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
